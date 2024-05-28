@@ -1,5 +1,16 @@
 #!/bin/bash
 
+##################
+# Author: Yash
+# Date: 28/05/2024
+#
+# version: v2
+#
+# This script lets you see who has the pull permissions for this directory/repo.
+#
+#################
+validate_args()
+
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -35,6 +46,19 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+
+# Helper function to validate command-line arguments
+function validate_args {
+    local expected_args=2
+
+    if [[ $# -ne $expected_args ]]; then
+        echo "Usage: $0 <repo_owner> <repo_name>"
+        echo "Please provide valid arguments."
+    fi
+}
+
+
+
 
 # Main script
 
