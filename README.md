@@ -1,4 +1,4 @@
-🔐 GitHub Repository Read Access Checker
+**🔐** GitHub Repository Read Access Checker
 A simple Bash script that lists users who have read (pull) access to a specific GitHub repository using the GitHub API.
 
 📜 Script Info
@@ -8,10 +8,10 @@ Version: v3
 
 Date: 12/07/2025
 
-Description:
+* Description:
 This script helps you identify which users have read (pull) access to a given GitHub repository.
 
-⚙️ Prerequisites
+* ⚙️ Prerequisites
 Bash shell
 
 curl
